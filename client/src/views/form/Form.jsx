@@ -121,10 +121,16 @@ function Form() {
             setDogData({
                 ...dogData, temperament: [...dogData.temperament, el]
             })
+            setError(validation({
+                ...dogData, temperament: [...dogData.temperament, el]
+            }))
         } else {
             setDogData({
                 ...dogData, temperament: dogData.temperament.filter((temp) => temp !== el)
             })
+            setError(validation({
+                ...dogData, temperament: dogData.temperament.filter((temp) => temp !== el)
+            }))
         }
 
     }
@@ -182,7 +188,7 @@ function Form() {
                     <div className={Style.temperamentDiv}>
                         <h2 className={Style.temperamentName}>Temperamentos</h2>
 
-                        <input
+                        {/* <input
                             className={Style.Input}
                             list="temperamentOptions"
                             name="temperament"
@@ -190,7 +196,7 @@ function Form() {
                             type='search'
                             value={dogData.temperament}
                             onChange={handleChange}
-                        ></input>
+                        ></input> */}
                         <label className={Style.labelName} htmlFor='temperament'>{error.temperament}</label>
 
                     </div>
