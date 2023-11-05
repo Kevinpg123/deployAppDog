@@ -17,7 +17,7 @@ export const PAGE_NUM = "PAGE_NUM"
 export const getAllDogs = () => {
     return async (dispatch) => {
         try {
-            const response = await axios.get('http://localhost:3001/get_all')
+            const response = await axios.get('/get_all')
             const perritos = response.data
             const sendPerritos = []
             perritos.map((char, index) => {
@@ -51,7 +51,7 @@ export const getDogByName = (nameDog) => {
             return dispatch({type: RESET_SEARCH_DOGS_ERROR})
         }
         try {
-            const response = await axios.get('http://localhost:3001/get_name?nameDog='+ palabraCodificada)
+            const response = await axios.get('/get_name?nameDog='+ palabraCodificada)
             const perritos = response.data
             if (response.status == 203) {
                 return dispatch({
@@ -83,7 +83,7 @@ export const getAllTemperaments = () => {
     
     return async(dispatch) => {
         try {
-            const response = await axios("http://localhost:3001/get_all_temperaments");
+            const response = await axios("/get_all_temperaments");
             const datosListos = response.data.map((el) => {
                 return el.name
             })

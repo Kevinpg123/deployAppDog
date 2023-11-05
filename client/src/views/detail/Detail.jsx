@@ -14,7 +14,7 @@ function Detail() {
         const getDogById = async () => {
 
             try {
-                const response = await axios(`http://localhost:3001/get_raza/${idNum}`)
+                const response = await axios(`/get_raza/${idNum}`)
                 if (response) {
                     setDogDetail(response.data[0])
                     setReference(response.data[0].reference_image_id)

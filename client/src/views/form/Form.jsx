@@ -81,7 +81,7 @@ function Form() {
             }
             const datosNum = parseNum(dogData)   /////////aca cambio el formato para que lo acepte mi DB
             try {
-                const sendData = await axios.post("http://localhost:3001/add_dog", datosNum);
+                const sendData = await axios.post("/add_dog", datosNum);
                 window.alert("Raza creada satisfactoriamente")
             } catch (error) {
                 console.log(error.message);

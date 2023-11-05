@@ -8,6 +8,8 @@ import Form from './views/form/Form';
 import NavBar from './components/navBar/NavBar';
 import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 import About from './views/about/About';
+import axios from 'axios'
+axios.defaults.baseURL = 'http://localhost:3001/'
 
 function App() {
 
