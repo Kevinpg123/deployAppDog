@@ -1,0 +1,53 @@
+.bigDiv {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(204, 213, 174);
+
+}
+
+
+.Button {
+    margin-left: 1em;
+    margin-right: 1.5em;
+
+    background-color: rgb(212, 163, 115);
+    height: 2.1em;
+    width: 35%;
+    border-radius: 0.5em;
+    transition: transform 0.2s;
+    font-size: 0.9em;
+    font-family: Arial;
+    padding: 0px 4px;
+
+}
+
+.Button:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 4px black;
+}
+
+.Button:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 4px white;
+}
+
+.input {
+    height: 1.7em;
+    width: 10em;
+    border-radius: 0.6em;
+    background-color: rgb(254, 250, 224);
+    padding-left: 1em;
+    font-weight: bold;
+    font-size: 1em;
+
+
+}
+
+.input::placeholder {
+    color: black;
+
+    font-size: 1em;
+    font-weight: initial;
+}

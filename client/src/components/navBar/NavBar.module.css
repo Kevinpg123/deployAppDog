@@ -1,0 +1,101 @@
+.bigDiv {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(254, 250, 224);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.searchDiv {
+    align-self: center;
+    visibility: visible;
+}
+
+.hiddenSearch {
+    visibility: hidden;
+}
+
+.navDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0em;
+    align-items: center;
+    background-color: rgb(204, 213, 174);
+    height: 7.5em;
+
+
+
+
+}
+
+/* .Button {
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    margin-top: 1.5em;
+    background-color: rgb(212, 163, 115);
+    height: 2.1em;
+    width: 100%;
+    border-radius: 0.5em;
+    transition: transform 0.2s;
+    font-size: 0.9em;
+    font-family: Arial;
+    padding: 0px 4px;
+} */
+
+.buttonContainer {
+    margin-left: 15em;
+    width: 27em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+}
+
+
+.Button {
+    background-color: rgb(204, 213, 174);
+    font-size: 1.2em;
+    border: none;
+
+
+}
+
+
+.Button:hover {
+    cursor: pointer;
+    /* border-radius: 5px; */
+    /* box-shadow: 0 0px 4px black; */
+    border-bottom: 1px solid black;
+}
+
+.Button:active {
+    transform: translateY(3px);
+    /* box-shadow: 0 0px 4px white; */
+    /* border-radius: 5px; */
+    border-bottom: 1px solid black;
+
+
+}
+
+.imgContainer {
+    align-self: center;
+    margin-left: 4em;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.imagen {
+    height: 5.5em;
+    width: 5.5em;
+    border-radius: 50%;
+}
+
+.titulo {
+    margin-left: 0.5em;
+    font-family: Candara;
+}
