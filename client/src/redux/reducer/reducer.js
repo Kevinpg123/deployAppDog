@@ -123,7 +123,7 @@ const rootReducer = (state = initialState, action) => {
             }
             if (payload === "DB") {
                 return {
-                    ...state, allDogs: state.allDogsOriginal.slice().filter((el) => el.id.length > 5)
+                    ...state, allDogs: state.allDogsOriginal.slice().filter((el) => el.id > 999)
                 }
             }
             break;

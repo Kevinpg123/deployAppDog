@@ -24,7 +24,8 @@ const addDog = async (req, res) => {
         res.status(201).json(newPerro)
 
     
-} catch (error) {
+    } catch (error) {
+        console.log(error.message);
     res.status(500).json({message: error.message})
 }
 };

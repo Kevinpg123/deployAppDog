@@ -13,8 +13,10 @@ module.exports = (sequelize) => {
       // type: Sequelize.UUID,
       //   defaultValue: Sequelize.literal('uuid_generate_v4()'),
       type:DataTypes.INTEGER,
-        allowNull: false,
-        primaryKey: true,
+        
+      primaryKey: true,
+      
+      
 
     },
     reference_image_id: {
@@ -42,6 +44,24 @@ module.exports = (sequelize) => {
     
   }, {timestamps: false});
 
- 
+  sequelize.beforeCreate(async (product, options) => {
+    
+      // Encuentra el valor máximo actual del id en la tabla
+      const maxId = await sequelize.models.Dog.max('id');
+      
+    if (maxId > 250) {
+        product.id = maxId + 1
+    }
+    else {
+      
+      // Aumenta el id en 1000 más que el valor máximo actual
+      product.id = maxId + 1000;
+    }
+    
+  });
+
+
+
+
 };
 
