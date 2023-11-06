@@ -10,8 +10,9 @@ module.exports = (sequelize) => {
   sequelize.define('dog', {
     
     id: {
-      type: Sequelize.UUID,
-        defaultValue: Sequelize.literal('uuid_generate_v4()'),
+      // type: Sequelize.UUID,
+      //   defaultValue: Sequelize.literal('uuid_generate_v4()'),
+      type:DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
 
