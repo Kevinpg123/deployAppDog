@@ -5,6 +5,8 @@ import { useEffect } from 'react'
 import { getAllDogs, orderDogs, directionOrderName } from '../../redux/action/action'
 import { useDispatch } from 'react-redux'
 import style from './Landing.module.css'
+import perrito from '../../perritoLanding.png'
+import Boton from '../../components/button/button'
 
 
 function Landing() {
@@ -22,12 +24,18 @@ function Landing() {
 
     return (
         <div className={style.bigDiv}>
-            <h1 className={style.h1}>Bienvenidos al SPA de perros</h1>
-            <img className={style.img} src='https://i.pinimg.com/originals/5d/09/74/5d0974693a94fdbc65c2cc493c826616.jpg' />
-            <hr></hr>
-            <Link to='/home'>
-                <button className={style.button}>Ingresar</button>
-            </Link>
+            <div className={style.divImg}>
+
+                <img src={perrito} className={style.dogImg} />
+            </div>
+            <div className={style.divText}>
+                <p className={style.h1}>Welcome to <br /> Dogs App</p>
+                {/* <h1 className={style.h1}>Welcome to Dog's app</h1> */}
+                <Link to='/home'>
+                    <Boton label='Enter' />
+                </Link>
+            </div>
+
         </div>
     )
 }

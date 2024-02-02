@@ -1,22 +1,23 @@
 .bigDiv {
     display: flex;
-    flex-direction: column;
-    border: 1px solid black;
+    flex-direction: row;
+
     background-color: rgb(254, 250, 224);
     height: 100%;
     padding-bottom: 35em;
+    padding-top: 8em;
+    justify-content: center;
 }
 
 .h1 {
-    font-size: 2.9em;
+    font-size: 3.5em;
     font-family: Arial;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    margin-top: 2em;
-    text-shadow: 4px 4px 8px #ffb627;
-    -webkit-text-stroke: 1px black;
-    color: white;
+    margin-top: 1.2em;
+
+    color: black;
 
 }
 
@@ -63,4 +64,41 @@
 .button:active {
     transform: translateY(3px);
     box-shadow: 0 2px 4px white;
+}
+
+.divImg {
+    height: 25em;
+    width: auto;
+
+
+}
+
+.dogImg {
+    height: 20em;
+    width: auto;
+}
+
+.divText {
+    padding-top: 0em;
+    margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+@media only screen and (max-width:600px) {
+    .bigDiv {
+        flex-direction: column;
+        padding-top: 2em;
+    }
+
+    .dogImg {
+        height: 15em;
+        width: auto;
+    }
+
+    .divImg {
+        height: 15em;
+    }
 }

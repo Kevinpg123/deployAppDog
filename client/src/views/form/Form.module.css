@@ -269,3 +269,29 @@
     border: 3px solid #D4A373;
     /* creates padding around scroll thumb */
 }
+
+@media only screen and (max-width:600px) {
+    .bigDiv {
+        flex-direction: column;
+
+    }
+
+    .imgBig {
+        display: none;
+
+    }
+
+    .formBig {
+        width: 101%;
+        padding-left: 0;
+        border: 1px solid black;
+    }
+
+    .form {
+        margin-left: 0em;
+        padding-left: 0em;
+        margin-right: 1.5em;
+    }
+
+
+}

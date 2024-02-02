@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { getDogByName } from '../../redux/action/action'
 import { useState } from 'react'
 import Style from './SearchBar.module.css'
+import Boton from '../button/button'
 const URL = "http://localhost:3001/get_name?nameDog="
 
 
@@ -37,11 +38,11 @@ function SearchBar() {
 
     return (
         <div className={Style.bigDiv}>
-            <input className={Style.input} placeholder='Buscar raza' type='search' onChange={(e) => setNameDog(e.target.value)} onKeyPress={handleKeyPress}></input>
-            <button className={Style.Button} onClick={handlerSearch}>Buscar</button>
-            {
+            <input className={Style.input} type='search' onChange={(e) => setNameDog(e.target.value)} onKeyPress={handleKeyPress}></input>
+            <button className={Style.Button}>Search</button>
+            {/* {
                 error && <label>Ingresar un mínimo de 3 carácteres</label>
-            }
+            } */}
 
 
         </div>

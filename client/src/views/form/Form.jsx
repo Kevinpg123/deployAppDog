@@ -146,16 +146,16 @@ function Form() {
                 </Link>
             </div> */}
             <div className={Style.formBig}>
-                <h1 className={Style.h1}>Formulario de creación de raza</h1>
+                <h1 className={Style.h1}>Create a dog breed</h1>
                 <form className={Style.form} onSubmit={handleSubmit}>
                     <div className={Style.inputsDiv}>
-                        <h2 className={Style.nameH2}>Nombre</h2>
-                        <input placeholder='Ingrese el nombre' className={Style.Input} name="name" value={dogData.name} onChange={handleChange}></input>
+                        <h2 className={Style.nameH2}>Name</h2>
+                        <input placeholder='Insert name' className={Style.Input} name="name" value={dogData.name} onChange={handleChange}></input>
                         <label className={Style.labelName} htmlFor='name'>{error.name}</label>
                     </div>
 
                     <div className={Style.inputDobleBigDiv}>
-                        <h2 className={Style.nameH2}>Altura [cm]</h2>
+                        <h2 className={Style.nameH2}>Height [cm]</h2>
                         <div className={Style.inputDobleDiv}>
                             <input placeholder='Min' className={Style.InputDobles} name='heightMin' value={dogData.heightMin} onChange={handleChange}></input>
                             <input placeholder='Max' className={Style.InputDobles} name='heightMax' value={dogData.heightMax} onChange={handleChange}></input>
@@ -167,7 +167,7 @@ function Form() {
 
 
                     <div className={Style.inputDobleBigDiv}>
-                        <h2 className={Style.nameH2}>Peso [kg]</h2>
+                        <h2 className={Style.nameH2}>Weight [kg]</h2>
                         <div className={Style.inputDobleDiv}>
                             <input placeholder='Min' className={Style.InputDobles} name='weightMin' value={dogData.weightMin} onChange={handleChange}></input>
                             <input placeholder='Max' className={Style.InputDobles} name='weightMax' value={dogData.weightMax} onChange={handleChange}></input>
@@ -176,7 +176,7 @@ function Form() {
                     </div>
 
                     <div className={Style.inputDobleBigDiv}>
-                        <h2 className={Style.nameH2}>Años de vida</h2>
+                        <h2 className={Style.nameH2}>Life Span</h2>
                         <div className={Style.inputDobleDiv}>
                             <input placeholder='Min' className={Style.InputDobles} name='life_spanMin' value={dogData.life_spanMin} onChange={handleChange}></input>
                             <input placeholder='Max' className={Style.InputDobles} name='life_spanMax' value={dogData.life_spanMax} onChange={handleChange}></input>
@@ -186,7 +186,7 @@ function Form() {
 
 
                     <div className={Style.temperamentDiv}>
-                        <h2 className={Style.temperamentName}>Temperamentos</h2>
+                        <h2 className={Style.temperamentName}>Temperaments</h2>
 
                         {/* <input
                             className={Style.Input}
@@ -237,7 +237,7 @@ function Form() {
 
                     <br></br>
                     <div className={Style.submitDiv}>
-                        <button className={Style.buttonSubmit} type='submit'>Ingresar Datos</button>
+                        <button className={Style.buttonSubmit} type='submit'>Submit</button>
                     </div>
                 </form>
             </div>

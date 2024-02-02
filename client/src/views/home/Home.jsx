@@ -127,11 +127,11 @@ function Home() {
                 <div className={Style.orderDivInterno}>
                     {/* <h3 className={Style.tituloOrder}>Ordenamiento</h3> */}
                     <select className={Style.filterSelect} onChange={(value) => handleOrder(value)} defaultValue={""}>
-                        <option value="" disabled >Ordenamiento</option>
-                        <option value={["name", "asc"]} >Nombre &uarr; </option>
-                        <option value={["name", "desc"]} >Nombre &darr;</option>
-                        <option value={["weight", "asc"]}>Peso &uarr;</option>
-                        <option value={["weight", "desc"]}>Peso &darr;</option>
+                        <option value="" disabled >Order</option>
+                        <option value={["name", "asc"]} >Az </option>
+                        <option value={["name", "desc"]} >Za</option>
+                        <option value={["weight", "asc"]}>Weight &uarr;</option>
+                        <option value={["weight", "desc"]}>Weight &darr;</option>
                     </select>
                 </div>
 
@@ -151,8 +151,8 @@ function Home() {
                 <div className={Style.orderDivInterno}>
                     {/* <h3 className={Style.tituloOrder}>Temperamento</h3> */}
                     <select className={Style.filterSelect} onChange={(el) => handleFilterTemperament(el)} defaultValue={""}>
-                        <option value="" disabled>Temperamento</option>
-                        <option value="all">Todos</option>
+                        <option value="" disabled>Temperament</option>
+                        <option value="all">All</option>
                         {
                             allTemperaments && allTemperaments.map((temp, index) => {
                                 return <option key={index} value={temp}>{temp}</option>
@@ -164,14 +164,15 @@ function Home() {
                 <div className={Style.orderDivInterno}>
                     {/* <h3 className={Style.tituloOrder}>Orígen</h3> */}
                     <select className={Style.filterSelect} onChange={(el) => handleFilterOrigin(el)} defaultValue={""}>
-                        <option value="" disabled>Origen</option>
-                        <option value="">Todos</option>
+                        <option value="" disabled>Origin</option>
+                        <option value="">All</option>
                         <option value="API">API</option>
-                        <option value="DB">Base de datos</option>
+                        <option value="DB">Data Base</option>
                     </select>
 
                 </div>
             </div>
+
             {/* {showAllDogs ? <Cards props={allDogs} /> : null} */}
             {showAllDogs ? <Cards props={getCurrentDogs()} /> : null}
 
@@ -189,13 +190,13 @@ function Home() {
                     className={Style.Button}
                     disabled={pageNum === 1}
                     onClick={() => handlePage(pageNum - 1)}
-                >Anterior</button>
-                <h2>Pagina: {pageNum}</h2>
+                >Previous</button>
+                <h2>Page: {pageNum}</h2>
                 <button
                     className={Style.Button}
                     disabled={getCurrentDogs().length < 8}
                     onClick={() => { window.scrollTo(0, 250); return (handlePage(pageNum + 1)) }}
-                >Siguiente</button>
+                >Next</button>
             </div>
             <button onClick={handleUpClick} className={getCurrentDogs().length > 0 ? Style.buttonUP : Style.buttonUPinvisible}>
                 <img className={Style.imgButtonUP} src='https://liceodeolmue.cl/assets/images/arriba.png' />

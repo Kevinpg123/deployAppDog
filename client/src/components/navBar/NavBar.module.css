@@ -24,7 +24,7 @@
     padding-top: 0em;
     align-items: center;
     background-color: rgb(204, 213, 174);
-    height: 7.5em;
+    height: 5em;
 
 
 
@@ -90,12 +90,43 @@
 }
 
 .imagen {
-    height: 5.5em;
-    width: 5.5em;
+    margin-top: 0.5em;
+    height: 4em;
+    width: 4em;
     border-radius: 50%;
 }
 
 .titulo {
     margin-left: 0.5em;
     font-family: Candara;
+}
+
+@media only screen and (max-width:600px) {
+    .bigDiv {
+        width: 100%;
+    }
+
+    .imgContainer {
+        flex-direction: column;
+        height: 5em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .titulo {
+        size: 1em;
+        display: none;
+    }
+
+    .buttonContainer {
+        margin-left: 0em;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+
+    .Button {
+        margin-right: 1em;
+    }
+
+
 }

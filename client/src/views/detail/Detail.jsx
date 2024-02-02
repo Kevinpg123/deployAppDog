@@ -102,11 +102,11 @@ function Detail() {
 
                             <div className={style.divText}>
                                 <h1 className={style.nameTitulo}>{dogDetail.name}</h1>
-                                <p className={style.texto}> Su altura está entre {dogDetail.height ? (`${dogDetail.height}`) : ("N/A")} centímetros.</p>
-                                <p className={style.texto}>Su peso puede variar entre {dogDetail.weight ? (`${dogDetail.weight}`) : ("N/A")} kg.</p>
-                                <p className={style.texto}>Vive alrededor de {dogDetail.life_span} años.</p>
-                                <p className={style.texto}>Y sus temperamentos son: {dogDetail.temperament}.</p>
-                                <p className={style.texto}>Su id es: {idNum}.</p>
+                                <p className={style.texto}> The dog has a height ranging {dogDetail.height ? (`${dogDetail.height}`) : ("N/A")} centimeters.</p>
+                                <p className={style.texto}>Its weight can vary between {dogDetail.weight ? (`${dogDetail.weight}`) : ("N/A")} kg.</p>
+                                <p className={style.texto}>The life span is {dogDetail.life_span} años.</p>
+                                <p className={style.texto}>And its temperaments are {dogDetail.temperament}.</p>
+
                             </div>
                         </div>
                     </>

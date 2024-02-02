@@ -3,7 +3,8 @@ body {
 }
 
 .bigDiv {
-
+    display: flex;
+    flex-direction: column;
     background-color: rgb(254, 250, 224);
     padding-bottom: 3em;
 }
@@ -113,4 +114,21 @@ body {
 
 .imgButtonUP:active {
     transform: translateY(3px);
+}
+
+@media only screen and (max-width:600px) {
+    .orderFilter {
+        justify-content: center;
+        margin-top: 1.8em;
+    }
+
+    .bigDiv {
+        justify-content: center;
+    }
+
+    .Button {
+        width: 21%;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
 }

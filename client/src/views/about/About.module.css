@@ -64,3 +64,27 @@
     margin-right: 0.5em;
     margin-left: 0.5em;
 }
+
+
+@media only screen and (max-width:600px) {
+    .bigDiv {
+        flex-direction: column;
+    }
+
+    .secondDiv {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textDiv {
+        width: 95%;
+        margin-left: 0em;
+        margin-top: 1em;
+
+    }
+
+    .textP {
+        text-align: left;
+    }
+}

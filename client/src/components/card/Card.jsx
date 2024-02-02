@@ -48,8 +48,8 @@ function Card({ name, temperament, weight, reference_image_id, id }) {
 
 
 
-                <h3 className={Style.text}>Temperamento: {temperament}</h3>
-                <h3 className={Style.text}>Peso: {weight} kg</h3>
+                <h3 className={Style.text}>Temperament: {temperament}</h3>
+                <h3 className={Style.text}>Weight: {weight} kg</h3>
             </div>
         </Link>
     )

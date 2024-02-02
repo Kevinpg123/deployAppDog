@@ -17,7 +17,7 @@ function NavBar() {
             <div className={Style.navDiv}>
                 <div className={Style.imgContainer}>
                     <img className={Style.imagen} src="https://img.freepik.com/vector-premium/logotipo-perro-lindo-dibujos-animados-minimalista-simple_68410-146.jpg" alt="logotipo pagina" />
-                    <h1 className={Style.titulo}>Spa de Perros</h1>
+                    <h1 className={Style.titulo}>Dogs App</h1>
                 </div>
                 <div className={Style.buttonContainer}>
                     <Link to="/home">
