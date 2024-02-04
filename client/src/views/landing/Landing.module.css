@@ -31,15 +31,6 @@
     animation-fill-mode: forwards;
 }
 
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
 
 .button {
     margin-left: 0.8em;
@@ -87,10 +78,14 @@
 
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:800px) {
     .bigDiv {
         flex-direction: column;
-        padding-top: 2em;
+        padding-top: 8em;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        padding-left: 0;
     }
 
     .dogImg {
@@ -100,5 +95,9 @@
 
     .divImg {
         height: 15em;
+    }
+
+    .divText {
+        margin-left: 0;
     }
 }

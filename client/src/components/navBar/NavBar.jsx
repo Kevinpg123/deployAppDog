@@ -30,7 +30,8 @@ function NavBar() {
                         <button className={Style.Button}>About</button>
                     </Link>
                 </div>
-                <div className={location.pathname === "/home" ? Style.searchDiv : Style.hiddenSearch}>
+                <div className={Style.hiddenSearch}>
+                    {/* <div className={location.pathname === "/home" ? Style.searchDiv : Style.hiddenSearch}> */}
 
 
                     <SearchBar />

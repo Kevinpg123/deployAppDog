@@ -101,7 +101,7 @@
     font-family: Candara;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:800px) {
     .bigDiv {
         width: 100%;
     }
@@ -122,10 +122,11 @@
         margin-left: 0em;
         padding-left: 0em;
         padding-right: 0em;
+
     }
 
     .Button {
-        margin-right: 1em;
+        margin-right: 0.5em;
     }
 
 

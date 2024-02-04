@@ -237,6 +237,7 @@
     margin-right: 10em;
     border-radius: 50%;
     overflow: hidden;
+    display: none;
 }
 
 .formBig {
@@ -270,9 +271,12 @@
     /* creates padding around scroll thumb */
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:800px) {
     .bigDiv {
+        width: 100%;
         flex-direction: column;
+        justify-content: center;
+
 
     }
 
@@ -282,15 +286,26 @@
     }
 
     .formBig {
-        width: 101%;
+        width: 100%;
         padding-left: 0;
-        border: 1px solid black;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .form {
         margin-left: 0em;
         padding-left: 0em;
-        margin-right: 1.5em;
+        margin-right: 0em;
+    }
+
+
+
+}
+
+@media only screen and (max-width:800px) {
+    .labelName {
+        display: none;
     }
 
 

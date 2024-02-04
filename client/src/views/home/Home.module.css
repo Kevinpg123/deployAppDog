@@ -116,7 +116,7 @@ body {
     transform: translateY(3px);
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:800px) {
     .orderFilter {
         justify-content: center;
         margin-top: 1.8em;

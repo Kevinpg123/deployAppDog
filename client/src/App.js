@@ -20,13 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* {location.pathname !== "/" && (
-          <>
-          <NavBar/>
-          </>
-        )
-
-        } */}
+      
       <>
           <NavBar/>
           </>
