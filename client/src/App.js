@@ -10,7 +10,7 @@ import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 import About from './views/about/About';
 import axios from 'axios'
 // axios.defaults.baseURL = 'http://localhost:3001/'
-axios.defaults.baseURL = 'https://deployappdog-production.up.railway.app/'
+axios.defaults.baseURL = 'https://deployappdog.onrender.com'
 
 function App() {
 
